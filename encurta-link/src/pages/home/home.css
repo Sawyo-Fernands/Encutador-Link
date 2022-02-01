@@ -1,0 +1,100 @@
+
+.container-home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo h1{
+    font-size: 60px;
+    color: white;
+}
+.logo span{
+    color: white;
+    margin-top: 0.9rem;
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+}
+.area-input{
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation:slideY 2s;
+
+}
+@keyframes slideY{
+
+    from{
+        transform: translateY(90px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+
+}
+
+
+.area-input div{
+    width: 100%;
+    height: 2.875rem;
+    background-color: rgba(255, 255, 255, 0.027);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.area-input svg{
+    margin: 0 8px;
+}
+.area-input input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 0;
+    color: white;
+    outline: none;
+    font-size: 1rem;
+}
+.area-input input::placeholder{
+    color: rgba(255, 255, 255, 0.8);
+}
+.area-input button{
+    width: 100%;
+    height: 2.875rem;
+    margin-top: 1.5rem;
+    background: #FFFFFF;
+    border: 0px transparent;
+    border-radius: 7px;
+    outline: none;
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+}
+.area-input button:hover{
+    transform: scale(1.03);
+    transition: .1s;
+}
+@media (max-width:600px){
+
+    .logo img{
+        width: 95px;
+    }
+    .logo h1{
+        font-size: 40px;
+    }
+    .logo span{
+        font-size: 0.8rem;
+    }
+    .area-input{
+        width: 85%;
+    }
+}

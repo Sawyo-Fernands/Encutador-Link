@@ -1,0 +1,26 @@
+
+
+header{
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+header nav{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+header nav button{
+    margin-right: 2rem;
+    padding: 1rem 1.3rem;
+    outline: none;
+    border: 0;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+
