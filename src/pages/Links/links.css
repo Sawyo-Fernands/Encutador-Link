@@ -3,6 +3,8 @@
 .links-container{
     max-width: 70rem;
     margin: 2rem auto 0 auto;
+    position: absolute;
+    top: 2rem;
 }
 .links-header{
     display: flex;
@@ -23,6 +25,20 @@
 
 .links-item:last-child{
     margin-bottom: 1.1rem;
+}
+.empty-list{
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+    
+}
+.empty-text{
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-top: 5rem;
+    font-size: 2rem;
+    font-weight: bold;
 }
 .link{
     border: 0;
@@ -64,6 +80,10 @@
 }
 .link{
     width: 100%;
+}
+.empty-list img{
+    width: 90%;
+    height: 90%;
 }
 }
 @media (max-width:281px){

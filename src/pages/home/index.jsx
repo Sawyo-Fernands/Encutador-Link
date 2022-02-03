@@ -12,6 +12,7 @@ import { Modal } from "../../components/modal";
 import api from '../../services/api'
 
 import { ToastContainer, toast } from 'react-toastify';
+import { getLinks, saveLink } from "../../services/storelinks";
 
 
 export const Home=()=>{
@@ -28,6 +29,10 @@ export const Home=()=>{
             })
             setdata(response.data)
             setShow(true)
+    
+            saveLink('@link',response.data)
+
+            setLink('')
         }catch{
             alert("Erro ao enviar URL !")
             setLink('')
